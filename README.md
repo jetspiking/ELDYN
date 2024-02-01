@@ -1,2 +1,1 @@
-# ELDYN
-ELDYN LaTeX Dynamic
+# ELDYN LaTeX Dynamic
