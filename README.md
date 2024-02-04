@@ -1,5 +1,5 @@
 # <img src="https://raw.githubusercontent.com/jetspiking/ELDYN/main/Images/EldynFavicon.png" width="64" height="64"> ELDYN LaTeX Dynamic
-<img src="https://raw.githubusercontent.com/jetspiking/ELDYN/main/Images/Eldyn.jpg" Width="600">
+<img src="https://raw.githubusercontent.com/jetspiking/ELDYN/main/Images/Eldyn.jpg" Width="400">
 
 # Description
 ELDYN is a tool that allows manipulating files by priorly defining variables or templates inside a file that should be adjusted dynamically. This works ideal for LaTeX, due to the nature of the WYSIWYM writing approach. ELDYN allows inputting a JSON file containing (your own) variables and outputting it into personalized templates. This makes ELDYN a candidate for dynamically creating certificates, invoices, documentation, labels and more.
