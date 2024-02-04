@@ -19,7 +19,8 @@ Get your ELDYN certificate by cloning the repository and running the included ex
 - "Certificate.tex" (Output file)
 
 Then compile the Certificate.tex output using your favorite LaTeX software stack.
-<img src="https://raw.githubusercontent.com/jetspiking/ELDYN/main/Images/Certificate.png" Width="400">
+
+<img src="https://raw.githubusercontent.com/jetspiking/ELDYN/main/Images/Certificate.png" Width="800">
 
 # Requirements
 - .NET Framework Installed
