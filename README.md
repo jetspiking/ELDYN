@@ -12,6 +12,15 @@ ELDYN requires three arguments:
 
 E.g., ```ELDYN "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Certificate.json" "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Temp" "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Out\Certificate.tex"```
 
+# Certificate
+Get your ELDYN certificate by cloning the repository and running the included example "Entry-certificate". Adjust "Certificate.json" to feature your own name, then run ELDYN for arguments:
+- "Certificate.json" (JSON-file)
+- "Temp" (Template directory)
+- "Certificate.tex" (Output file)
+
+Then compile the Certificate.tex output using your favorite LaTeX software stack.
+<img src="https://raw.githubusercontent.com/jetspiking/ELDYN/main/Images/Certificate.png" Width="400">
+
 # Requirements
 - .NET Framework Installed
 
