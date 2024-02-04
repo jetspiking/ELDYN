@@ -21,7 +21,7 @@ ELDYN searches and replaces all matching occurances of properties with data in t
 - ```$ELDYN:Property```
 - ```$ELDYN::Template```
 
-A single colon symbol matches for properties, while a double colon symbol matches for templates.
+A single colon symbol ```:``` matches for properties, while a double colon symbol ```::``` matches for templates.
 
 ## Minimal Example
 The following JSON-file (in.json) is an example of assigning a value to a property and generating output following the constraints of a template:
