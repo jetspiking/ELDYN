@@ -1,0 +1,18 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Invoice}
+
+\textbf{Invoice Number:} 287452
+
+\textbf{Customer Name:} lorum
+
+\subsection*{Items}
+\begin{itemize}
+\item \textbf{Name:} name, \textbf{Quantity:} 53, \textbf{Unit Price:} 20
+\item \textbf{Name:} name2, \textbf{Quantity:} 46, \textbf{Unit Price:} 68
+\end{itemize}
+
+\end{document}

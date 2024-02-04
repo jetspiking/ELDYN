@@ -1,0 +1,14 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section*{Invoice}
+
+\textbf{Invoice Number:} $ELDYN:InvoiceNumber
+
+\textbf{Customer Name:} $ELDYN:CustomerName
+
+\subsection*{Items}
+$ELDYN::InvoiceList
+\end{document}

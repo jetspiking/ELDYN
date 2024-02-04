@@ -1,0 +1,56 @@
+{
+    "Template": "Invoice",
+    "Properties": 
+    [
+        {
+            "Id": "InvoiceNumber",
+            "Assign": "287452"
+        },
+        {
+            "Id": "CustomerName",
+            "Assign": "lorum"
+        }
+    ],
+    "Children": [
+        {
+            "Template": "InvoiceList",
+            "Properties": [],
+            "Children": [
+                {
+                    "Template": "InvoiceListItem",
+                    "Properties": [
+                        {
+                            "Id": "Name",
+                            "Assign": "name"
+                        },
+                        {
+                            "Id": "Quantity",
+                            "Assign": "53"
+                        },
+                        {
+                            "Id": "Price",
+                            "Assign": "20"
+                        }
+                    ]
+                },
+                {
+                    "Template": "InvoiceListItem",
+                    "Properties": [
+                        {
+                            "Id": "Name",
+                            "Assign": "name2"
+                        },
+                        {
+                            "Id": "Quantity",
+                            "Assign": "46"
+                        },
+                        {
+                            "Id": "Price",
+                            "Assign": "68"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

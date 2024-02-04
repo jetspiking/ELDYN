@@ -1,0 +1,54 @@
+\documentclass[12pt,a4paper,landscape]{article}
+\usepackage[margin=3cm]{geometry}
+\usepackage{pgfornament}
+\usepackage{polyglossia}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\definecolor{fondpaille}{cmyk}{0,0,0.1,0}
+\pagecolor{fondpaille}
+\pagestyle{empty}
+\begin{document}
+\tikzset{pgfornamentstyle/.style={draw=olive}}
+\begin{tikzpicture}[every node/.append style={inner sep=0},remember picture,overlay]
+\draw [] ([shift={(1,1)}]current page.south west) rectangle ([shift={(-1,-1)}]current page.north east);
+\node [anchor=south west] at ([shift={(1,1)}]current page.south west) {\pgfornament[width=2.7cm,,symmetry=h]{63}};
+\node [anchor=south east] at ([shift={(-1,1)}]current page.south east) {\pgfornament[width=2.7cm,,symmetry=c]{63}};
+\node [anchor=north west] at ([shift={(1,-1)}]current page.north west) {\pgfornament[width=2.7cm]{63}};
+\node [anchor=north east] at ([shift={(-1,-1)}]current page.north east) {\pgfornament[width=2.7cm,,symmetry=v]{63}};
+\node [anchor=south west](A) at ([shift={(3,1)}]current page.south west) {\pgfornament[width=7.76cm]{87}};
+\node [anchor=south west] (B) at (A.south east) {\pgfornament[width=7.76cm]{87}};
+\node [anchor=south west]  at (B.south east) {\pgfornament[width=7.76cm]{87}};
+\node [anchor=south east,rotate=-180](C) at ([shift={(3,-1)}]current page.north west) {\pgfornament[width=7.76cm]{87}};
+\node [anchor=south east,rotate=-180] (D) at (C.south west) {\pgfornament[width=7.76cm]{87}};
+\node [anchor=south east,rotate=-180]  at (D.south west) {\pgfornament[width=7.76cm]{87}};
+\node [anchor=south east,rotate=-90](E) at ([shift={(1,3)}]current page.south west) {\pgfornament[width=7.3cm]{87}};
+\node [anchor=south east,rotate=-90]  at (E.south west) {\pgfornament[width=7.3cm]{87}};
+\node [anchor=south west,rotate=90](F) at ([shift={(-1,3)}]current page.south east) {\pgfornament[width=7.3cm]{87}};
+\node [anchor=south west,rotate=90]  at (F.south east) {\pgfornament[width=7.3cm]{87}};
+\node at ([shift={(0,-5.5)}]current page.north) {\fontsize{48pt}{48pt}{\textbf{ Certificate of Completion}}};
+\end{tikzpicture}
+
+\centering
+\vspace{3cm}
+\includegraphics[width=3cm]{TinyEldyn.png} 
+
+% \vspace{5.5cm}
+\centering
+\Large
+\color{black}This is to verify that
+\color{olive}Your-name-here
+\color{black}has completed the
+\color{olive}entry
+\color{black}training
+\color{black}for
+\color{olive}ELDYN.
+\color{black}And has successfully generated this certificate following the instructions on:
+
+\vspace{.8cm}
+\textit{\color{black}https://github.com/jetspiking/ELDYN}
+
+\vspace{1.2cm}
+\color{black}Signature: \includegraphics[width=4cm]{EldynBasicCertSign.png}
+\hspace{9cm}
+\color{black}\today
+\end{document} 
