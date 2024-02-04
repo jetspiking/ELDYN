@@ -4,6 +4,15 @@
 # Description
 ELDYN is a tool that allows manipulating files by priorly defining variables or templates inside a file that should be adjusted dynamically. This works ideal for LaTeX, due to the nature of the WYSIWYM writing approach. ELDYN allows inputting a JSON file containing (your own) properties (variables) and outputting it into personalized templates. This makes ELDYN a candidate for dynamically creating certificates, invoices, documentation, labels and more.
 
+# Usage
+ELDYN requires three arguments:
+- Path to JSON file
+- Path to template directory
+- Path to output file
+
+E.g., ```ELDYN "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Certificate.json" "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Temp" "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Out\Certificate.tex"```
+
+# Documentation
 ELDYN differentiates between properties and templates.
 - A property is a string value that should be inputted when matching a key.
 - A template can contain more lines that should be injected when referenced. This is especially useful for dynamically generating lists and pieces of text / code not solely relying or matching with the user input. A template requires the ".eldyn" extension.
@@ -35,14 +44,6 @@ This would generate the following file:
 ```
 My property value
 ```
-
-# Usage
-ELDYN requires three arguments:
-- Path to JSON file
-- Path to template directory
-- Path to output file
-
-E.g., ```ELDYN "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Certificate.json" "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Temp" "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Out\Certificate.tex"```
 
 # Certificate
 Get your ELDYN certificate by cloning the repository and running the included example "Entry-certificate". Adjust "Certificate.json" to feature your own name, then run ELDYN for arguments:
