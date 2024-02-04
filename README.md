@@ -18,8 +18,8 @@ ELDYN differentiates between properties and templates.
 - A template can contain more lines that should be injected when referenced. This is especially useful for dynamically generating lists and pieces of text / code not solely relying or matching with the user input. A template requires the ".eldyn" extension.
 
 ELDYN searches and replaces all matching occurances of properties with data in the JSON, and if relevant, injects templates as well.
-- ELDYN:Property
-- ELDYN::Template
+- ```$ELDYN:Property```
+- ```$ELDYN::Template```
 
 A single colon symbol matches for properties, while a double colon symbol matches for templates.
 
