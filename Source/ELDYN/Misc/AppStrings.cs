@@ -15,7 +15,7 @@ namespace ELDYN.Misc
         public static readonly String TemplateProcessed = "Processed template: ";
 
         public static readonly String SuggestArguments = "\nExpected \"ELDYN <path to JSON file> <path to template directory> <path to output file>\".\nE.g.: ELDYN \"C:\\ELDYN\\Certificate.json\" \"C:\\ELDYN\\Temp\" \"C:\\ELDYN\\Out\\Certificate.tex\"";
-        public static readonly String SuggestEldynManual = "\nRead the manual on https://docs.eldyn.nl.";
+        public static readonly String SuggestEldynManual = "\nInfo on https://eldyn.nl";
 
         public static readonly String NoticeEldynStart = "\n========== STARTING ELDYN ==========";
         public static readonly String NoticeEldynStop = "========== STOPPING ELDYN ==========\n";
