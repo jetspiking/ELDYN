@@ -2,7 +2,7 @@
 <img src="https://raw.githubusercontent.com/jetspiking/ELDYN/main/Images/Eldyn.jpg" Width="400">
 
 # Description
-ELDYN is a tool that allows manipulating files by priorly defining variables or templates inside a file that should be adjusted dynamically. This works ideal for LaTeX, due to the nature of the WYSIWYM writing approach. ELDYN allows inputting a JSON file containing (your own) properties (variables) and outputting it into personalized templates. ELDYN is best usable for documents adhering to a strict format specification. This makes ELDYN a candidate for dynamically creating certificates, invoices, documentation, labels and more.
+ELDYN is a tool that allows manipulating files by priorly defining variables or templates that should be injected dynamically. This works ideal for LaTeX, due to the nature of the WYSIWYM writing approach. ELDYN allows inputting a JSON file containing (custom) properties (variables) and outputting these into personalized templates. ELDYN is best usable for documents adhering to a strict format specification. This makes ELDYN a candidate for dynamically creating certificates, invoices, documentation, labels and more.
 
 # Usage
 ELDYN requires three arguments:
