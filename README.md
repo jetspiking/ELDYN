@@ -15,6 +15,7 @@ E.g., ```ELDYN "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Certific
 On Windows reference the executable using command prompt. On MacOS and Linux set execute permissions prior to attempting to run the application.
 
 ```chmod +x ELDYN-osx-x64```
+
 ```./ELDYN-osx-x64 arg0 arg1 arg2```
 
 # Documentation
