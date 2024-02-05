@@ -12,6 +12,11 @@ ELDYN requires three arguments:
 
 E.g., ```ELDYN "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Certificate.json" "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Temp" "C:\Users\dusti\Desktop\ELDYNPub\Learn\Entry-certificate\Out\Certificate.tex"```
 
+On Windows reference the executable using command prompt. On MacOS and Linux set execute permissions prior to attempting to run the application.
+
+```chmod +x ELDYN-osx-x64```
+```./ELDYN-osx-x64 arg0 arg1 arg2```
+
 # Documentation
 ELDYN differentiates between properties and templates.
 - A property is a string value that should be inputted when matching a key.
