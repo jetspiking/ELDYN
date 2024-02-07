@@ -24,10 +24,10 @@ ELDYN differentiates between properties and templates.
 - A template can contain more lines that should be injected when referenced. This is especially useful for dynamically generating lists and pieces of text / code not solely relying or matching with the user input. A template requires the ".eldyn" extension.
 
 ELDYN searches and replaces all matching occurances of properties with data in the JSON, and if relevant, injects templates as well.
-- ```$ELDYN:Property```
-- ```$ELDYN::Template```
+- ```$ELDYN:Property;```
+- ```$ELDYN::Template;```
 
-A single colon symbol ```:``` matches for properties, while a double colon symbol ```::``` matches for templates.
+A single colon symbol ```:``` matches for properties, while a double colon symbol ```::``` matches for templates. A semi colon symbol ```;``` is used to mark the end of the string.
 
 ## Minimal Example
 The following JSON-file (in.json) is an example of assigning a value to a property and generating output following the constraints of a template:
@@ -45,7 +45,7 @@ The following JSON-file (in.json) is an example of assigning a value to a proper
 ```
 The referenced template file (Template.eldyn) could state:
 ```
-$ELDYN:Property
+$ELDYN:Property;
 ```
 This would then generate the following file:
 ```
