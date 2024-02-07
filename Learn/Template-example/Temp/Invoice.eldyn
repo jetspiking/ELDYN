@@ -5,9 +5,9 @@
 
 \section*{Invoice}
 
-\textbf{Invoice Number:} $ELDYN:InvoiceNumber
+\textbf{Invoice Number:} $ELDYN:InvoiceNumber;
 
-\textbf{Customer Name:} $ELDYN:CustomerName
+\textbf{Customer Name:} $ELDYN:CustomerName;
 
 \subsection*{Items}
 $ELDYN::InvoiceList

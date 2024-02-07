@@ -1,1 +1,1 @@
-\item \textbf{Name:} $ELDYN:Name, \textbf{Quantity:} $ELDYN:Quantity, \textbf{Unit Price:} $ELDYN:Price
+\item \textbf{Name:} $ELDYN:Name;, \textbf{Quantity:} $ELDYN:Quantity;, \textbf{Unit Price:} $ELDYN:Price;
