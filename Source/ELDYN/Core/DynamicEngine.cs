@@ -54,14 +54,14 @@ namespace ELDYN.Core
             if (templateInstruction.Properties != null)
                 foreach (TemplateValue templateValue in templateInstruction.Properties)
                 {
-                    String valueMatchPattern = $@"\$ELDYN:{templateValue.Id}";
+                    String valueMatchPattern = $@"\$ELDYN:{templateValue.Id};";
                     templateContent = Regex.Replace(templateContent, valueMatchPattern, templateValue.Assign);
                 }
 
             // Validate whether this is the root template for cleanup template commands purposes.
             if (fileContent != String.Empty)
             {
-                String templateMatchPattern = $@"\$ELDYN::{templateInstruction.Template}";
+                String templateMatchPattern = $@"\$ELDYN::{templateInstruction.Template};";
                 MatchCollection matches = Regex.Matches(fileContent, templateMatchPattern);
                 for (Int32 i = matches.Count - 1; i > -1; i--)
                 {
@@ -72,7 +72,7 @@ namespace ELDYN.Core
             else
             {
                 fileContent = templateContent;
-                const String cleanPattern = $@"\n?\$ELDYN::([a-zA-Z0-9]+).*";
+                const String cleanPattern = $@"\n?\$ELDYN::([a-zA-Z0-9]+);";
                 MatchCollection matches = Regex.Matches(fileContent, cleanPattern);
                 foreach (Match match in matches)
                     fileContent = Regex.Replace(fileContent, cleanPattern, String.Empty);
